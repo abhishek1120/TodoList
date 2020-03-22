@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task-List</title>
+  </head>
+  <body class="grey darken-4">
+    <div class="container animated zoomIn slow">
+      <h1 class="center-align white-text animated fadeIn delay-1s">
+        TASK LIST
+      </h1>
+      <div class="row">
+        <div class="col s12">
+          <div class="card" id="main">
+            <div class="card-content  animated bounceIn delay-1s">
+              <span class="card-title">Task List</span>
+              <form id="task-form">
+                <div class="input-field col s12">
+                  <input type="text" name="task" id="task" />
+                  <label for="task">New Task</label>
+                </div>
+                <input
+                  type="submit"
+                  value="Add task"
+                  style="font-family: Montserrat;"
+                  class="btn light-blue darken-4"
+                />
+              </form>
+            </div>
+            <div class="card-action  animated bounceIn delay-1s">
+              <h5 id="task-title">Tasks</h5>
+              <div class="input-field col s12">
+                <input type="text" name="filter" id="filter" />
+                <label for="filter">Search</label>
+              </div>
+              <ul class="collection"></ul>
+              <a href="#" class="clear-tasks btn red darken-4">CLear Tasks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/dccf2c8e0f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
